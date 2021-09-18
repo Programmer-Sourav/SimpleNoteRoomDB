@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/edittext_bg">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Title goes here."
+        android:textSize="16dp" android:id="@+id/title_of_note"
+        android:padding="8dp" android:layout_weight="1"
+        android:textColor="#000000"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="15-09"
+            android:textSize="16dp"
+            android:id="@+id/timestamp"
+            android:padding="8dp" android:layout_weight="1"
+            android:textColor="#000000"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="Description goes here."
+        android:id="@+id/description_of_note"
+        android:padding="8dp"
+        android:layout_weight="1.7"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="0.3"
+        android:id="@+id/delete"
+        android:src="@drawable/delete"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

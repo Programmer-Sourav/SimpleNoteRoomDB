@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2">
+<EditText
+    android:layout_width="0dp"
+    android:layout_height="60dp"
+    android:id="@+id/title"
+    android:layout_margin="16dp"
+    android:background="#f1f8e9"
+    android:hint="Title"
+    android:layout_weight="1.6"
+    android:paddingLeft="8dp"/>
+ <ImageView
+     android:layout_width="0dp"
+     android:layout_height="60dp"
+     android:background="@drawable/tick"
+     android:layout_weight="0.4"
+     android:id="@+id/save_note"
+     android:layout_margin="16dp"/>
+</androidx.appcompat.widget.LinearLayoutCompat>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/description"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#e8eaf6"
+        android:gravity="center|top|left"
+        android:hint="Note goes here"
+        android:padding="8dp"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

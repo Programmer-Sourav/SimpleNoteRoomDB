@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SimpleNotes</string>
+    <string name="fab_content_desc">Add</string>
+</resources>
